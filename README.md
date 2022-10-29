@@ -1,5 +1,7 @@
 # Juno-Demo-App
 
+I have developed this app using Kotlin Jetpack Compose.
+
 1.Library Used:
 
 /******* to load svg image url *****/ 
