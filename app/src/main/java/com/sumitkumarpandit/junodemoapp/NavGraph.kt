@@ -3,8 +3,10 @@ package com.sumitkumarpandit.junodemoapp
 import android.Manifest
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.navArgument
 import com.sumitkumarpandit.junodemoapp.ui.theme.EmptyValuesScreen
 import com.sumitkumarpandit.junodemoapp.ui.theme.HomeScreen
 
@@ -17,7 +19,7 @@ fun NavGraph(navHostController: NavHostController) {
             HomeScreen(navHostController)
         }
         composable(route = Screen.EmptyValues.route) {
-            EmptyValuesScreen(name = "Empty")
+            EmptyValuesScreen()
         }
     }
 }
